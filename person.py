@@ -1,6 +1,10 @@
 
 class Person:
-    def __init__(self, name=None, id=None, mother=None, father=None):
+    def __init__(self, 
+                 name=None, 
+                 id=None, 
+                 mother=None, 
+                 father=None):
         self.name = name
         self.id = id
         self.mother = mother
@@ -8,6 +12,8 @@ class Person:
         
     def get_name(self):
         return self.name
+    def  set_name(self, name):
+        self.name = name;
     def get_id(self):
         return self.id
     def get_mother(self):

@@ -19,7 +19,7 @@ class PersonRepositoryImpl(PersonRepository):
         
         try:
             cursor.execute("INSERT INTO persons (id, name) VALUES (%s, %s)", 
-                           (person["id"],person['name'],))
+                           (person["id"],person['name']))
             conn.commit()
             return cursor.lastrowid
         finally:
